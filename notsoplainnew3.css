@@ -1,0 +1,59 @@
+/* Container for layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Main content */
+.main-body {
+    flex: 3; /* Occupies 3/4th of the space */
+    padding: 20px;
+}
+
+/* Sidebar for links */
+.sidebar {
+    flex: 1; /* Occupies 1/4th of the space */
+    padding: 20px;
+	/*
+    background-color: #f2f2f2;
+	*/
+    border-left: 1px solid #ccc;
+}
+
+/* Sidebar links */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* this section controls how the text in the navbar (Home, RSS, Mastodon
+   links) is displayed*/
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 1em;
+}
+
+/* this section controls how the footer text is displayed */
+#footer {
+	padding-top: 1em;
+	padding-bottom: 2em;
+	font-size: 70%;
+	text-align: center;
+}
